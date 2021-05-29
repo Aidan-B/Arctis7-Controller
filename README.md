@@ -18,7 +18,7 @@ Below is the list of features that I want to complete, and the issues that I sho
 
 ### Required
 
-- [ ] Poll for headset on/off status within headset class
+- [x] Poll for headset on/off status within headset class
 - [ ] Switch audio output (linux) based on headset status
 - [ ] compile on windows
 - [ ] Switch audio output (windows) based on headset status

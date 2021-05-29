@@ -5,9 +5,6 @@
 
 Arctis7Headset::Arctis7Headset(libusb_context* ctx)
 {    
-    m_poweredOn = false;
-    m_printIncomingMessages = false;
-
     m_ctx = ctx;
     m_device = nullptr;
 
@@ -67,12 +64,14 @@ Arctis7Headset::Arctis7Headset(libusb_context* ctx)
 
 	m_listenForInterrupts = true;
     m_interruptThread = std::thread(&Arctis7Headset::InterruptListenerThread, this);
+    m_powerStatusThread = std::thread(&Arctis7Headset::PollPowerStatusThread, this);
 }
 
 Arctis7Headset::~Arctis7Headset()
 {   
     libusb_cancel_transfer(m_interrupt_transfer);
     m_listenForInterrupts = false;
+    m_powerStatusThread.join();
     m_interruptThread.join();
 
     libusb_release_interface(m_handle, m_interface);
@@ -86,7 +85,7 @@ void Arctis7Headset::FeatureRequest(unsigned char *requestBuff, const int reques
     CheckInterruptThreadException();
     err = libusb_control_transfer(m_handle, 0x21 , 0x09, 0x0206, 0x0005, requestBuff, requestLen, 1000);
     if (err <= LIBUSB_SUCCESS)
-        throw libusb_error(err);    
+        throw libusb_error(err);
 }
 
 void Arctis7Headset::CheckInterruptThreadException() {
@@ -110,6 +109,38 @@ void Arctis7Headset::CheckInterruptThreadException() {
     }
 }
 
+void Arctis7Headset::updatePowerStatus(bool status) {
+    if (status != m_poweredOn) 
+        if (m_printIncomingMessages >= change)
+            std::cout << (status ? "Powered on" : "Powered off") << std::endl;
+
+    if (m_printIncomingMessages >= info)
+        std::cout << (status ? "Headphones are connected" : "Headphones are not connected")<< std::endl;
+
+    m_poweredOn = status;
+}
+
+void Arctis7Headset::PollPowerStatusThread() {
+    
+    unsigned char req[31] = {0x06, 0x14, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+    auto next = std::chrono::steady_clock::now() + m_pollingInterval;
+    
+    try {
+        while (m_listenForInterrupts)
+        {
+            FeatureRequest(req, 31);
+            
+            next += m_pollingInterval;
+            std::this_thread::sleep_until(next); 
+        }
+    }
+    catch (...) {
+        m_listenForInterrupts = false;
+        m_interruptThreadException = std::current_exception();
+    }
+    
+}
+
 void Arctis7Headset::InterruptListenerThread() {
 
 	int err;
@@ -118,7 +149,7 @@ void Arctis7Headset::InterruptListenerThread() {
     
     m_interrupt_transfer = libusb_alloc_transfer(0);
     try {
-        libusb_fill_interrupt_transfer(m_interrupt_transfer, m_handle, m_endpoint, reply, reply_len, handleInterrupt, this, 1);
+        libusb_fill_interrupt_transfer(m_interrupt_transfer, m_handle, m_endpoint, reply, reply_len, handleInterrupt, this, 0);
         err = libusb_submit_transfer(m_interrupt_transfer);
         if (err < LIBUSB_SUCCESS)
             throw libusb_error(err);
@@ -154,22 +185,23 @@ void LIBUSB_CALL Arctis7Headset::handleInterrupt(libusb_transfer *transfer) {
             throw libusb_transfer_status(transfer->status);
         } else if (transfer->actual_length > 0) {
             
-            if (memcmp(transfer->buffer, poweroff, transfer->actual_length) == 0) {
-                headset->m_poweredOn = false;
-                std::cout << "Headphones powered off" << std::endl;
-
-            } else if (memcmp(transfer->buffer, isDisconnected, transfer->actual_length) == 0) {
-                headset->m_poweredOn = false;
-                std::cout << "Headphones are not connected" << std::endl;
-
-            } else if (memcmp(transfer->buffer, isConnected, transfer->actual_length) == 0) {
-                headset->m_poweredOn = true;
-                std::cout << "Headphones are connected" << std::endl;
+            if (memcmp(transfer->buffer, poweroff, transfer->actual_length) == 0 ||
+                memcmp(transfer->buffer, isDisconnected, transfer->actual_length) == 0)
+            {
+                headset->updatePowerStatus(false);
             }
-            for (int i = 0; i < transfer->actual_length; i++) {//just print the raw hex data
-                printf("%02x ", transfer->buffer[i]);
+            else if (memcmp(transfer->buffer, isConnected, transfer->actual_length) == 0)
+            {
+                headset->updatePowerStatus(true);
             }
-            std::cout << std::endl;	
+            
+            if (headset->m_printIncomingMessages >= all)
+            {
+                for (int i = 0; i < transfer->actual_length; i++) {//just print the raw hex data
+                    printf("%02x ", transfer->buffer[i]);
+                }
+                std::cout << std::endl;	
+            }
 
         } else {
             std::cout << "NULL" << std::endl; //We somehow got a zero length buffer?
