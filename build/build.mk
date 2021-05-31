@@ -1,10 +1,12 @@
 # Thanks to Job Vranish (https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
-TARGET_EXEC ?= app
+OUTPUT ?= app
 
 BUILD_DIR ?= build
 SRC_DIRS ?= src
 INC_DIRS ?= include
-LIB_FLAGS ?= 
+LIB_DIRS ?= lib
+LINK_FLAGS ?=
+VERSION_FLAG ?=
 
 DEBUG_MACROS ?= DEBUG
 RELEASE_MACROS ?= NDEBUG
@@ -19,52 +21,67 @@ else
     HIDE =  
 endif
 
+TARGET ?= LINUX
+ifeq  ($(TARGET),WINDOWS)
+	CXX := x86_64-w64-mingw32-g++
+	INC_DIRS += $(WIN_INC_DIRS)
+	LIB_DIRS += $(WIN_LIB_DIRS)
+	BUILD := $(addsuffix /windows,$(BUILD_DIR))
+
+else 
+	CXX := g++
+	INC_DIRS += $(LINUX_INC_DIRS)
+	LIB_DIRS += $(LINUX_LIB_DIRS)
+	BUILD := $(addsuffix /linux,$(BUILD_DIR))
+
+endif
+
 
 # Find all the C and C++ files we want to compile
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp)
 
-# Add a prefix to INC_DIRS. So moduleA would become -ImoduleA. GCC understands this -I flag
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
+LIB_FLAGS := $(addprefix -L,$(LIB_DIRS))
 
-DEBUG_OBJS := $(SRCS:%=$(BUILD_DIR)/debug/%.o)
-RELEASE_OBJS := $(SRCS:%=$(BUILD_DIR)/release/%.o)
+DEBUG_OBJS := $(SRCS:%=$(BUILD)/debug/%.o)
+RELEASE_OBJS := $(SRCS:%=$(BUILD)/release/%.o)
 
 DEBUG_DEPS := $(DEBUG_OBJS:.o=.d)
 RELEASE_DEPS := $(RELEASE_OBJS:.o=.d)
 
 # The -MMD and -MP flags together generate Makefiles for us!
 # These files will have .d instead of .o as the output.
-CPPFLAGS := $(INC_FLAGS) -MMD -MP 
-LDFLAGS += $(LIB_FLAGS)
+CPPFLAGS := $(INC_FLAGS)  -MMD -MP 
+LDFLAGS += $(LINK_FLAGS) $(LIB_FLAGS) $(VERSION_FLAG)
 
 
 .PHONY: all verbose clean debug release
 all: help
 
 clean:
-	@echo "Cleaning directory: $(BUILD_DIR)"
-	$(HIDE)find $(BUILD_DIR) -type f -not -name build.mk -delete
+	@echo "Cleaning directory: $(BUILD)"
+	$(HIDE)find $(BUILD) -type f -not -name build.mk -delete
 
-debug: $(BUILD_DIR)/debug/$(TARGET_EXEC)
+debug: $(BUILD)/debug/$(OUTPUT)
 	@echo "Building Debug complete"
 
-release: $(BUILD_DIR)/release/$(TARGET_EXEC)
+release: $(BUILD)/release/$(OUTPUT)
 	@echo "Building Release complete"
 
 # Link built objects
-$(BUILD_DIR)/debug/$(TARGET_EXEC): $(DEBUG_OBJS)
+$(BUILD)/debug/$(OUTPUT): $(DEBUG_OBJS)
 	@echo "Linking $(DEBUG_OBJS)"
 	$(HIDE)$(CXX) $(DEBUG_OBJS) -o $@ $(LDFLAGS)
-$(BUILD_DIR)/release/$(TARGET_EXEC): $(RELEASE_OBJS)
+$(BUILD)/release/$(OUTPUT): $(RELEASE_OBJS)
 	@echo "Linking $(RELEASE_OBJS)"
 	$(HIDE)$(CXX) $(RELEASE_OBJS) -o $@ $(LDFLAGS)
 
 # Build C++ source
-$(BUILD_DIR)/debug/%.cpp.o: %.cpp
+$(BUILD)/debug/%.cpp.o: %.cpp
 	@echo "Building $< -> $@"
 	$(HIDE)mkdir -p $(dir $@)
 	$(HIDE)$(CXX) $(CPPFLAGS) $(DEBUG_FLAGS) $(CXXFLAGS) -c $< -o $@
-$(BUILD_DIR)/release/%.cpp.o: %.cpp
+$(BUILD)/release/%.cpp.o: %.cpp
 	@echo "Building $< -> $@"
 	$(HIDE)mkdir -p $(dir $@)
 	$(HIDE)$(CXX) $(CPPFLAGS) $(RELEASE_FLAGS) $(CXXFLAGS) -c $< -o $@
@@ -87,7 +104,7 @@ help:
 	@echo "    form ATTRIBUTE = value value."
 	@echo ""
 	@echo "    Attributes:"
-	@echo "        TARGET_EXEC     The name of the executable that is generated."
+	@echo "        OUTPUT          The name of the executable that is generated."
 	@echo "                        Default value: app"
 	@echo "        BUILD_DIR       The directory for build objects and files relative to"
 	@echo "                        the makefile"
@@ -101,6 +118,8 @@ help:
 	@echo "                        Default value: DEBUG"
 	@echo "        RELEASE_MACROS  #define macros defined for release builds"
 	@echo "                        Default value: NDEBUG"
+	@echo "        TARGET          If set to WINDOWS, will create windows executable
+	@echo "                        Default value: LINUX"
 	@echo "        VERBOSE         Print verbose command execution."
 	@echo "                        Default value: FALSE"
 

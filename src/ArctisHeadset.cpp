@@ -1,10 +1,17 @@
+#ifdef DEBUG
+    #define DEBUG_PRINT(x) do { std::cerr << x << std::endl; } while (0)
+#else
+    #define DEBUG_PRINT(x) do { } while (0)
+#endif
+
 #include "ArctisHeadset.h"
 
 #include <iostream>
 #include <string.h>
 
 Arctis7Headset::Arctis7Headset(libusb_context* ctx)
-{    
+{
+    DEBUG_PRINT("Constructing headset object");
     m_ctx = ctx;
     m_device = nullptr;
 
@@ -34,6 +41,7 @@ Arctis7Headset::Arctis7Headset(libusb_context* ctx)
     if (m_device == nullptr) {
         throw libusb_error(LIBUSB_ERROR_NOT_FOUND);
     }
+    DEBUG_PRINT("Found device, claiming");
     err = libusb_open(m_device, &m_handle);
     if (err != LIBUSB_SUCCESS)
         throw libusb_error(err);
@@ -62,6 +70,7 @@ Arctis7Headset::Arctis7Headset(libusb_context* ctx)
     	throw libusb_error(err);
     }
 
+    DEBUG_PRINT("Starting PollPowerStatusThread");
 	m_listenForInterrupts = true;
     m_interruptThread = std::thread(&Arctis7Headset::InterruptListenerThread, this);
     m_powerStatusThread = std::thread(&Arctis7Headset::PollPowerStatusThread, this);
@@ -69,10 +78,11 @@ Arctis7Headset::Arctis7Headset(libusb_context* ctx)
 
 Arctis7Headset::~Arctis7Headset()
 {   
-    libusb_cancel_transfer(m_interrupt_transfer);
+    libusb_cancel_transfer(m_interruptTransfer);
     m_listenForInterrupts = false;
     m_powerStatusThread.join();
     m_interruptThread.join();
+    libusb_free_transfer(m_interruptTransfer);
 
     libusb_release_interface(m_handle, m_interface);
 	if (libusb_has_capability(LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER))
@@ -82,10 +92,14 @@ Arctis7Headset::~Arctis7Headset()
 
 void Arctis7Headset::FeatureRequest(unsigned char *requestBuff, const int requestLen) {
     int err = 0;
+    DEBUG_PRINT("Checking status:");
+    
     CheckInterruptThreadException();
-    err = libusb_control_transfer(m_handle, 0x21 , 0x09, 0x0206, 0x0005, requestBuff, requestLen, 1000);
-    if (err <= LIBUSB_SUCCESS)
+    err = libusb_control_transfer(m_handle, (LIBUSB_ENDPOINT_OUT | LIBUSB_REQUEST_TYPE_CLASS | LIBUSB_RECIPIENT_INTERFACE),  LIBUSB_REQUEST_SET_CONFIGURATION, 0x0206, 0x0005, requestBuff, requestLen, 5000);
+    if (err < LIBUSB_SUCCESS){
+        DEBUG_PRINT("ERROR: control " << libusb_strerror(err));
         throw libusb_error(err);
+    }    
 }
 
 void Arctis7Headset::CheckInterruptThreadException() {
@@ -111,8 +125,15 @@ void Arctis7Headset::CheckInterruptThreadException() {
 
 void Arctis7Headset::updatePowerStatus(bool status) {
     if (status != m_poweredOn) 
-        if (m_printIncomingMessages >= change)
-            std::cout << (status ? "Powered on" : "Powered off") << std::endl;
+        if (m_printIncomingMessages >= change) {
+            if (status) {
+                std::cout << "Powered on" << std::endl;
+                // system("./scripts/turnOn.sh");
+            } else {
+                std::cout << "Powered off" << std::endl;
+                // system("./scripts/turnOff.sh");
+            }
+        }
 
     if (m_printIncomingMessages >= info)
         std::cout << (status ? "Headphones are connected" : "Headphones are not connected")<< std::endl;
@@ -122,7 +143,10 @@ void Arctis7Headset::updatePowerStatus(bool status) {
 
 void Arctis7Headset::PollPowerStatusThread() {
     
-    unsigned char req[31] = {0x06, 0x14, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+    unsigned char req[31] = { 0 };
+    req[0] = 0x06;
+    req[1] = 0x14;
+    
     auto next = std::chrono::steady_clock::now() + m_pollingInterval;
     
     try {
@@ -147,10 +171,13 @@ void Arctis7Headset::InterruptListenerThread() {
     const int reply_len = libusb_get_max_packet_size(m_device, m_endpoint);
 	unsigned char reply[reply_len];
     
-    m_interrupt_transfer = libusb_alloc_transfer(0);
+    DEBUG_PRINT("alloc_transfer");
+    m_interruptTransfer = libusb_alloc_transfer(1);
     try {
-        libusb_fill_interrupt_transfer(m_interrupt_transfer, m_handle, m_endpoint, reply, reply_len, handleInterrupt, this, 0);
-        err = libusb_submit_transfer(m_interrupt_transfer);
+        DEBUG_PRINT("fill_interrupt_transfer");
+        libusb_fill_interrupt_transfer(m_interruptTransfer, m_handle, m_endpoint, reply, reply_len, handleInterrupt, this, 0);
+        DEBUG_PRINT("submit_transfer");
+        err = libusb_submit_transfer(m_interruptTransfer);
         if (err < LIBUSB_SUCCESS)
             throw libusb_error(err);
 
@@ -170,7 +197,7 @@ void Arctis7Headset::InterruptListenerThread() {
 }
 
 void LIBUSB_CALL Arctis7Headset::handleInterrupt(libusb_transfer *transfer) {
-
+    DEBUG_PRINT("handleInterrupt");
     //TODO: I need to figure out what all of these different numbers actually mean...
     // void ArctisHeadset::handleInterrupt(const unsigned char *buffer, const int &len) {
     static const unsigned char poweroff[5] = { 0x01, 0x00, 0x00, 0x00, 0x00 };
@@ -180,7 +207,6 @@ void LIBUSB_CALL Arctis7Headset::handleInterrupt(libusb_transfer *transfer) {
     Arctis7Headset *headset = static_cast<Arctis7Headset*>(transfer->user_data);
 
     try {
-        
         if (transfer->status != LIBUSB_TRANSFER_COMPLETED) { //error occured
             throw libusb_transfer_status(transfer->status);
         } else if (transfer->actual_length > 0) {
@@ -208,7 +234,7 @@ void LIBUSB_CALL Arctis7Headset::handleInterrupt(libusb_transfer *transfer) {
         }
 
         // Resumbit transfer
-        int err = libusb_submit_transfer(headset->m_interrupt_transfer);
+        int err = libusb_submit_transfer(headset->m_interruptTransfer);
         if (err < LIBUSB_SUCCESS)
             throw libusb_error(err);
     }

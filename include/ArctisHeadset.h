@@ -1,9 +1,10 @@
-#include <exception>
-#include <thread>
-#include <libusb-1.0/libusb.h>
-
 #ifndef __ARCTIS_HEADSET_H__
 #define __ARCTIS_HEADSET_H__
+
+#include <libusb-1.0/libusb.h>
+#include <exception>
+#include <thread>
+#include <atomic>
 
 typedef enum {
     silent, //Dont print headset status messages
@@ -17,10 +18,10 @@ class Arctis7Headset
 {
 private:
     // Status
-    bool m_poweredOn = false; // TODO: Implement this, we want to know the headset state as soon as it turns on
-    outputVerbosity m_printIncomingMessages = change;
+    bool m_poweredOn = false;
+    outputVerbosity m_printIncomingMessages = all;
     bool m_detachedDriver;
-    std::chrono::milliseconds m_pollingInterval = std::chrono::milliseconds(1000);
+    const std::chrono::milliseconds m_pollingInterval = std::chrono::milliseconds(5000);
 
     // USB stuff
     libusb_context *m_ctx;
@@ -36,17 +37,18 @@ private:
     std::thread m_interruptThread;
     std::thread m_powerStatusThread;
     std::exception_ptr m_interruptThreadException = nullptr;
-    libusb_transfer *m_interrupt_transfer;
+    libusb_transfer *m_interruptTransfer = nullptr;
+    libusb_transfer *m_controlTransfer = nullptr;
     // Rethrows m_interruptThreadException if thread dies.
     // This method should be called before attempting to use an async libusb resource
     void CheckInterruptThreadException();
     // When false, stops the interrupt thread
-    bool m_listenForInterrupts;
+    std::atomic_bool m_listenForInterrupts;
     void InterruptListenerThread();
     void PollPowerStatusThread();
 
     // void handleInterrupt(const unsigned char *buffer, const int& len);
-    static void handleInterrupt(libusb_transfer *transfer);
+    static void LIBUSB_CALL handleInterrupt(libusb_transfer *transfer);
 
     Arctis7Headset();
     void updatePowerStatus(bool status);
