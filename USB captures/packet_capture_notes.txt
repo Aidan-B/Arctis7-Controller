@@ -41,3 +41,11 @@ Audio Starts with - 0x28
 Sub-commands:
     Dynamic Range Compression - 0x07
     Equalizer - 0x03 or  0x04 (or maybe something else, I haven't tested this much)
+
+
+There are also the following UNKNOWN commands:
+    0x10
+    0x14 - polled every 5s
+    0x18 - polled every 5s
+    0x09
+    0x45
