@@ -1,489 +1,3749 @@
 No.     Time           Source                Destination           Protocol Length Info
-     73 1.445533       1.3.3                 host                  USB      95     URB_INTERRUPT in
+     69 1.328700       host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 69: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 1.361735       1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 71: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 1.374288       host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 73: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183201130100000700000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     76 1.466532       1.3.3                 host                  USB      95     URB_INTERRUPT in
+     74 1.375734       1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 76: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 74: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     81 6.430428       1.3.3                 host                  USB      95     URB_INTERRUPT in
+     77 6.320485       host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 77: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 6.351639       1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 79: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 6.364174       host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 81: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 061832130113010000310e0000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     84 6.444425       1.3.3                 host                  USB      95     URB_INTERRUPT in
+     82 6.366636       1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 84: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 82: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     89 11.452323      1.3.3                 host                  USB      95     URB_INTERRUPT in
+     85 11.334668      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 85: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     87 11.368543      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 87: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 11.390289      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 89: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     92 11.466322      1.3.3                 host                  USB      95     URB_INTERRUPT in
+     90 11.391542      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 92: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 90: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-     97 16.429218      1.3.3                 host                  USB      95     URB_INTERRUPT in
+     93 16.335875      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 93: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     95 16.368447      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 95: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     97 16.380725      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 97: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    100 16.444217      1.3.3                 host                  USB      95     URB_INTERRUPT in
+     98 16.382444      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 100: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 98: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    105 21.437113      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    101 21.324730      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 101: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    103 21.358352      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 103: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    105 21.370374      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 105: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    108 21.453112      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    106 21.372350      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 108: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 106: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    113 26.437008      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    109 26.316190      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 109: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 26.348256      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 111: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 26.360485      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 113: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    116 26.459008      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    114 26.362252      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 116: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 114: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    121 31.434904      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    117 31.329756      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 117: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    119 31.361158      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 119: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    121 31.379911      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 121: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    124 31.448903      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    122 31.381157      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 124: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 122: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    129 36.429798      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    125 36.328152      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 125: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    127 36.360062      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 127: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    129 36.378674      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 129: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    132 36.445842      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    130 36.380060      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 132: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 130: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    137 41.433693      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    133 41.331822      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 133: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    135 41.363975      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 135: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    137 41.376272      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 137: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    140 41.448692      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    138 41.377964      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 140: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 138: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    145 46.446587      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    141 46.327696      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 141: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    143 46.358869      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 143: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    145 46.379129      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 145: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    148 46.460586      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    147 46.381865      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 148: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 147: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    153 51.436482      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    149 51.344599      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 149: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    151 51.375775      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 151: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    153 51.394760      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 153: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    156 51.451508      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    154 51.396772      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 156: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 154: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    161 56.427377      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    157 56.328246      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 157: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    159 56.361676      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 159: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    161 56.377678      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 161: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    164 56.455376      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    162 56.384673      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 164: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 162: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    169 61.430272      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    165 61.335920      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 165: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    167 61.369580      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 167: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    169 61.382139      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 169: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    172 61.444272      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    170 61.384577      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 172: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 170: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    177 66.438168      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    173 66.332865      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 173: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    175 66.364482      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 175: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    177 66.378392      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 177: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    180 66.460165      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    178 66.380481      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 180: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 178: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    185 71.447062      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    181 71.329879      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 181: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    183 71.363388      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 183: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    185 71.383483      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 185: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    189 71.461059      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    187 71.386382      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 187: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    189 76.335040      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 189: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06140300000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    193 76.423957      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    191 76.367287      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 191: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    193 76.379353      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 193: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    196 76.437956      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    194 76.381287      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 196: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 194: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    201 81.445853      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    197 81.331263      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 197: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    199 81.362193      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 199: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    201 81.382516      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 201: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    204 81.458851      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    203 81.385188      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 204: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 203: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    209 86.444747      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    205 86.328331      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 205: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    207 86.361098      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 207: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    209 86.380106      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 209: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    212 86.458746      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    210 86.382094      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 212: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 210: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    217 91.434641      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    213 91.332637      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 213: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    215 91.364999      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 215: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    217 91.377511      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 217: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    220 91.448641      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    218 91.378998      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 220: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 218: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    225 96.429537      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    221 96.328261      host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 221: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    223 96.359902      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 223: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    225 96.379840      host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 225: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    228 96.443536      1.3.3                 host                  USB      95     URB_INTERRUPT in
+    227 96.382899      1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 228: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 227: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    233 101.437432     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    229 101.333587     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 229: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    231 101.362805     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 231: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    233 101.377014     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 233: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    236 101.451431     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    234 101.378802     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 236: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 234: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    241 106.427326     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    237 106.327394     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 237: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    239 106.357711     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 239: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    241 106.370210     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 241: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    244 106.443325     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    242 106.372705     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 244: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 242: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    249 111.427221     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    245 111.317718     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 245: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    247 111.348612     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 247: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    249 111.368234     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 249: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    252 111.441220     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    250 111.369610     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 252: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 250: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    257 116.426115     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    253 116.330606     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 253: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    255 116.365513     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 255: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    257 116.378628     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 257: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    260 116.447116     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    258 116.380511     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 260: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 258: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    265 121.430012     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    261 121.325636     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 261: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    263 121.360415     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 263: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    265 121.369610     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 265: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    269 121.453008     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    266 121.371413     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 266: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    269 126.315769     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 269: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06140300000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    273 126.428905     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    271 126.350318     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 271: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    273 126.363498     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 273: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    276 126.442905     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    274 126.365317     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 276: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 274: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    281 131.427801     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    277 131.333765     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 277: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    279 131.367222     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 279: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    281 131.379615     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 281: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    284 131.441799     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    282 131.381219     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 284: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 282: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    289 136.440695     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    285 136.325821     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 285: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    287 136.357125     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 287: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    289 136.377306     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 289: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    292 136.454694     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    291 136.380120     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 292: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 291: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    297 141.430591     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    293 141.323840     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 293: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    295 141.357027     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 295: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    297 141.371281     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 297: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    301 141.453587     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    298 141.373024     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 298: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    301 146.339717     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 301: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06140300000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    305 146.434485     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    303 146.369928     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 303: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    305 146.382117     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 305: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    308 146.452486     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    306 146.383926     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 308: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 306: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    313 151.433382     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    309 151.331648     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 309: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    311 151.363873     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 311: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    313 151.377205     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 313: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    317 151.456378     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    314 151.378831     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 314: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    317 156.323314     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 317: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06140300000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    321 156.428275     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    319 156.354739     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 319: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    321 156.368581     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 321: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    324 156.444274     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    322 156.369733     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 324: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 322: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    329 161.428169     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    325 161.338317     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 325: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    327 161.371636     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 327: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    329 161.383923     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 329: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    332 161.443168     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    330 161.385635     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 332: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 330: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    337 166.440069     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    333 166.331128     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 333: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    335 166.361540     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 335: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    337 166.375657     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 337: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    341 166.454063     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    338 166.377538     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 341: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 338: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    345 171.430959     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    341 171.320837     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 341: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    343 171.351443     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 343: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    345 171.371492     host                  1.3.0                 USBHID   95     SET_REPORT Request
 
 Frame 345: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
-HID Data: 06183203000000000000000000000000000000000000000000000000000000
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
 
 No.     Time           Source                Destination           Protocol Length Info
-    348 171.443959     1.3.3                 host                  USB      95     URB_INTERRUPT in
+    347 171.374439     1.3.3                 host                  USB      95     URB_INTERRUPT in
 
-Frame 348: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+Frame 347: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    349 176.321664     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 349: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    351 176.355345     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 351: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    353 176.367122     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 353: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    354 176.369344     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 354: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    357 181.335121     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 357: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    359 181.368248     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 359: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    361 181.380834     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 361: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    362 181.382244     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 362: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    365 186.330017     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 365: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    367 186.363152     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 367: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    369 186.375407     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 369: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    370 186.377149     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 370: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    373 191.335926     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 373: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    375 191.367052     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 375: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    377 191.387086     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 377: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    378 191.389049     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 378: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    381 196.318650     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 381: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    383 196.351953     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 383: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    385 196.364173     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 385: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    386 196.365952     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 386: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    389 201.334420     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 389: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    391 201.364857     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 391: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    393 201.377352     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 393: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    394 201.378854     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 394: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    397 206.347364     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 397: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    399 206.377757     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 399: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    401 206.390241     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 401: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    402 206.391756     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 402: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    405 211.319707     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 405: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    407 211.354659     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 407: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    409 211.368042     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 409: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    410 211.369659     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 410: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    413 216.321963     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 413: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    415 216.353562     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 415: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    417 216.373246     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 417: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    418 216.374560     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 418: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    421 221.320401     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 421: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    423 221.352465     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 423: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    425 221.364598     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 425: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    426 221.366462     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 426: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    429 226.335978     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 429: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    431 226.369368     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 431: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    433 226.381303     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 433: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    434 226.383364     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 434: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    437 231.330003     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 437: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    439 231.360272     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 439: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    441 231.372481     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 441: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    442 231.374267     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 442: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    445 236.317851     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 445: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    447 236.350170     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 447: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    449 236.362113     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 449: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    450 236.364169     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 450: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    453 241.332656     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 453: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    455 241.362072     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 455: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    457 241.374440     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 457: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    459 241.377068     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 459: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    461 246.327375     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 461: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    463 246.356977     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 463: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    465 246.369703     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 465: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    466 246.371973     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 466: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    469 251.337008     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 469: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    471 251.369876     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 471: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    473 251.389561     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 473: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    474 251.390873     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 474: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    477 256.318225     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 477: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    479 256.351778     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 479: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    481 256.365379     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 481: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    482 256.366776     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 482: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    485 261.334544     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 485: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    487 261.368685     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 487: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    489 261.380130     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 489: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    491 261.382678     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 491: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    493 266.328086     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 493: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    495 266.358583     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 495: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    497 266.371075     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 497: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    498 266.372581     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 498: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    501 271.336733     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 501: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    503 271.366487     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 503: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    505 271.378799     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 505: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    506 271.380482     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 506: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    509 276.323403     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 509: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    511 276.356387     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 511: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    513 276.368941     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 513: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    514 276.370385     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 514: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    517 281.337230     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 517: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    519 281.370289     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 519: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    521 281.382872     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 521: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    522 281.384286     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 522: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    525 286.329516     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 525: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    527 286.360190     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 527: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    529 286.372686     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 529: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    530 286.374188     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 530: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    533 291.318677     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 533: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    535 291.350092     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 535: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    537 291.362611     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 537: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    538 291.364091     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 538: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    541 296.348935     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 541: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    543 296.380994     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 543: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    545 296.392710     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 545: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    546 296.394992     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 546: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    549 301.318058     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 549: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    551 301.348897     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 551: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    553 301.362580     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 553: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    554 301.363915     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 554: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    557 306.328137     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 557: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    559 306.360798     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 559: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    561 306.373305     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 561: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    562 306.374796     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 562: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    565 311.321475     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 565: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    567 311.350701     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 567: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    569 311.364913     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 569: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    570 311.366697     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 570: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    573 316.332712     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 573: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    575 316.363600     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 575: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    577 316.376008     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 577: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    578 316.377599     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 578: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    581 321.319827     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 581: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    583 321.354503     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 583: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    585 321.368003     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 585: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    586 321.369501     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 586: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    589 326.338659     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 589: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    591 326.371404     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 591: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    593 326.382935     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 593: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    595 326.385401     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 595: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    597 331.330594     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 597: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    599 331.361306     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 599: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    601 331.373783     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 601: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    602 331.376303     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 602: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    605 336.325741     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 605: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    607 336.356207     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 607: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    609 336.368691     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 609: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    610 336.370205     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 610: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    613 341.339710     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 613: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    615 341.373108     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 615: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    617 341.385589     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 617: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    618 341.387106     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 618: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    621 346.341801     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 621: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    623 346.372012     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 623: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    625 346.386027     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 625: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    626 346.388007     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 626: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    629 351.312874     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 629: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    631 351.343912     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 631: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    633 351.364351     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 633: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    634 351.365909     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 634: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    637 356.333569     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 637: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    639 356.366811     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 639: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    641 356.378238     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 641: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    642 356.379808     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 642: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    645 361.323423     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 645: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    647 361.356713     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 647: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    649 361.376694     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 649: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    651 361.379710     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 651: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    653 366.325505     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 653: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    655 366.360613     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 655: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    657 366.370750     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 657: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    658 366.372610     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 658: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    661 371.320296     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 661: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06180000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    663 371.350515     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 663: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183103000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    665 371.362753     host                  1.3.0                 USBHID   95     SET_REPORT Request
+
+Frame 665: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06140000000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    666 371.364513     1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 666: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
 USB URB
 HID Data: 06140300000000000000000000000000000000000000000000000000000000

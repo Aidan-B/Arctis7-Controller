@@ -1,18 +1,19 @@
-==========
-Summary:
-==========
+# Summary:
+
 Arctis 7 Chat -> Endpoint 1 IN
 Arctis 7 Chat -> Endpoint 6 OUT
 Arctis 7 Game -> Endpoint 2 OUT
 
 Arctis 7 HID  -> Endpoint 3 IN
   on device shutoff endpoint 3 sends
-  URB_INTERRUPT in: 00000001 00000000 00000000 00000000 00000000
+  `URB_INTERRUPT in: 00000001 00000000 00000000 00000000 00000000`
 
 Every 5 seconds arctis software polls endpoint 3 for some information
 
 Something like this:
-3.2.3 -> Host
+
+**3.2.3 -> Host**
+```
   HID Data: 06180000000000000000000000000000000000000000000000000000000000
 0110 0001 1000 0000000000000000000000000000000000000000000000000000000000000 
   USB URB
@@ -55,7 +56,9 @@ Something like this:
         .... .... .0.. .... .... .... .... .... = DMA S-G Combined: False
         .... .... 0... .... .... .... .... .... = Aligned Temp Buffer: False
     Number of ISO descriptors: 0
-Host -> 2.3.2
+```
+**Host -> 2.3.2**
+```
   No HID Data
 
   USB URB
@@ -99,7 +102,9 @@ Host -> 2.3.2
         .... .... .0.. .... .... .... .... .... = DMA S-G Combined: False
         .... .... 0... .... .... .... .... .... = Aligned Temp Buffer: False
     Number of ISO descriptors: 0
-2.3.2 -> Host
+```
+**2.3.2 -> Host**
+```
   HID Data: 06140100000000000000000000000000000000000000000000000000000000
   USB URB
     [Source: 3.2.3]
@@ -143,7 +148,9 @@ Host -> 2.3.2
         .... .... .0.. .... .... .... .... .... = DMA S-G Combined: False
         .... .... 0... .... .... .... .... .... = Aligned Temp Buffer: False
     Number of ISO descriptors: 0
-Host -> 2.3.2
+```
+**Host -> 2.3.2**
+```
   USB URB
     [Source: host]
     [Destination: 3.2.3]
@@ -185,13 +192,17 @@ Host -> 2.3.2
         .... .... .0.. .... .... .... .... .... = DMA S-G Combined: False
         .... .... 0... .... .... .... .... .... = Aligned Temp Buffer: False
     Number of ISO descriptors: 0
+```
 Then we wait 5 seconds and it repeats
 
 But when we are connected we have:
-3.2.3 -> Host 
+**3.2.3 -> Host** 
+```
   HID Data: 06184701000000000000000000000000000000000000000000000000000000
-Host -> 2.3.2  
-2.3.2 -> Host
+```
+**Host -> 2.3.2**  
+**2.3.2 -> Host**
+```
   HID Data: 06140300000000000000000000000000000000000000000000000000000000
 
   HID Data: 06281800000000000000000000000000000000000000000000000000000000
@@ -263,35 +274,34 @@ Host -> 2.3.2
   HID Data: 06101301130100003f4d2a91866a7f63785c71000000000000000000000000
   HID Data: 06184701000000000000000000000000000000000000000000000000000000
   HID Data: 06140300000000000000000000000000000000000000000000000000000000
-
+```
 When it's back to just polling, it repeats this:
+```
   HID Data: 06184703000000000000000000000000000000000000000000000000000000
   HID Data: 06140300000000000000000000000000000000000000000000000000000000
+```
 
 And when it is turned off, we have:
+```
   HID Data: 0100000000
+```
 followed by repeating:
+```
   HID Data: 06180000000000000000000000000000000000000000000000000000000000
   HID Data: 06140100000000000000000000000000000000000000000000000000000000
+```
 
 
-From this we can see that we always start with 0110
-followed by 0001 when doing normal polling
-  1000 0000 0000 for first reply
-  0100 0000 0001 for second reply
+From this we can see that we always start with `0110`followed by `0001` when doing normal polling.
+- `1000 0000 0000` for first reply
+- `0100 0000 0001` for second reply
 
-followed by 0010 when performing a bootup connection
-
+followed by `0010` when performing a bootup connection
 
 
+### Device Info
 
-
-
-
-
-
-
-
+```
 Number of possible configurations: 1
 Device Class: 0
 VendorID: 4152  ProductID: 4781
@@ -333,11 +343,9 @@ Number of alternate settings: 1
         Number of endpoints: 1
         Descriptor Type: 5
         EP Address: 131
+```
 
-
-
-
-
+```
 $ lsusb -d  103:12ad -vv
 
 Bus 003 Device 002: ID 1038:12ad SteelSeries ApS SteelSeries Arctis 7
@@ -780,3 +788,4 @@ Device Descriptor:
         bInterval               1
 Device Status:     0x0000
   (Bus Powered)
+```
