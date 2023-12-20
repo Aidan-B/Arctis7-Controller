@@ -1,0 +1,4 @@
+This capture is just turning on the device.
+ The first transfer at 4s is when the device is off
+ The transfer at 9s is when the device is on
+ The device is turned off, and that is the final transfer

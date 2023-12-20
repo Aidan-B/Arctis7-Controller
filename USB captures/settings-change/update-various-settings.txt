@@ -1,0 +1,1104 @@
+Packet comments
+    Enable "Blink transmitter LED when headset is off"
+Frame 69: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06550102000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    Disable "Blink transmitter LED when headset is off"
+Frame 103: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06550100000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": 5min
+Frame 145: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06510500000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": 10min
+Frame 187: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06510a00000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": 30min
+Frame 205: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06511e00000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": 60min
+Frame 239: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06513c00000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": 90min
+Frame 257: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06515a00000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Turn headset off after inactive for": Never
+Frame 299: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06510000000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Sidetone": Low 
+Frame 4503: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06350100040000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Sidetone": Medium
+Frame 6497: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 063501000a0000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Sidetone": High
+Frame 7788: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06350100120000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Sidetone": Off
+Frame 8552: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06350000000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~0%
+Frame 34637: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330000000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~10%
+Frame 50098: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330003000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~15%
+Frame 56878: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0633000b000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~20%
+Frame 62002: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330012000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~25%
+Frame 66596: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0633001a000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~40%
+Frame 71083: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330022000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~50%
+Frame 80261: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330031000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~75%
+Frame 88303: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330050000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Mic Volume": ~100%
+Frame 93204: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06330064000000000000000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Low
+Frame 101375: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062807086e0000008f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Low
+Frame 101400: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280704557e00009000000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Low
+Frame 101414: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062807096e0000009400000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Low
+Frame 101429: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280705557e00009500000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Medium
+Frame 126657: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280708690000008f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Medium
+Frame 126676: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280704997d00009000000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Medium
+Frame 126692: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280709690000009400000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Medium
+Frame 126703: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280705997d00009500000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": High
+Frame 134319: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280708640000008f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": High
+Frame 134347: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280704007d00009000000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": High
+Frame 134371: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280709640000009400000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": High
+Frame 134392: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280705007d00009500000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Off
+Frame 139979: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062807087f0000008f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Off
+Frame 139994: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280704007f00009000000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Off
+Frame 140039: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062807097f0000009400000000000000000000000000000000000000000000
+
+Packet comments
+    "Dynamic Range Compression": Off
+Frame 140063: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280705007f00009500000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154062: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062803088958803f0100000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154077: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280309ee4cffbf0200000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154119: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030af1f17d3f0300000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154145: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030b0000803f0400000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154167: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030ca54eff3f0500000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154181: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030d999f7ebf0600000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154196: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280300010000000700000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154241: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 062804088958803f2b00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154265: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280409ee4cffbf2c00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154284: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040af1f17d3f2d00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154298: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040b0000803f2e00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154313: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040ca54eff3f2f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154359: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040d999f7ebf3000000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer": [...]
+Frame 154378: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280400010000003100000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177295: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280308684f7f3f0100000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177309: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280309869efebf0200000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177324: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030af3ef7d3f0300000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177367: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030b0000803f0400000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177393: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030cd29cfe3f0500000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177417: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628030dc4427dbf0600000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177441: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280300010000000700000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177466: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280408684f7f3f2b00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177491: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280409869efebf2c00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177515: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040af3ef7d3f2d00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177529: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040b0000803f2e00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177544: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040cd29cfe3f2f00000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177589: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 0628040dc4427dbf3000000000000000000000000000000000000000000000
+
+Packet comments
+    "Equalizer":  [...]
+Frame 177612: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+        0... .... = Direction: Host-to-device
+        .01. .... = Type: Class (0x1)
+        ...0 0001 = Recipient: Interface (0x01)
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0206
+        ReportID: 6
+        ReportType: Output (2)
+    wIndex: 5
+    wLength: 31
+    Data Fragment: 06280400010000003100000000000000000000000000000000000000000000

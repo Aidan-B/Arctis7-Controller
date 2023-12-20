@@ -1,0 +1,1231 @@
+No.     Time           Source                Destination           Protocol Length Info
+     77 10.782944      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 77: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06281800000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 10.832941      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 81: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280500200000008d00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     85 10.878941      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 85: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280600200000008e00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 10.923940      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 89: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036834dcac395500000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     93 10.968938      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 93: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036934dc2c3a5600000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     97 11.013979      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 97: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036a34dcac395700000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    101 11.058938      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 101: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036b0000803f5800000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    105 11.104934      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 105: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036ca257f93f5900000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    109 11.149933      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 109: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036db40573bf5a8d000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 11.194933      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 113: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280360010000005b8e000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    117 11.248932      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 117: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046834dcac397155000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    121 11.293930      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 121: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046934dc2c3a7256000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    125 11.343932      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 125: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046a34dcac397357000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    129 11.388930      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 129: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046b0000803f7458000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    133 11.433928      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 133: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046ca257f93f7559000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    137 11.488927      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 137: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046db40573bf765a8d0000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    141 11.533930      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 141: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046001000000775b8e0000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    145 11.578929      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 145: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037834dcac395c71550000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    149 11.623926      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 149: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037934dc2c3a5d72560000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    153 11.669926      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 153: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037a34dcac395e73570000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    157 11.718926      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 157: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037b0000803f5f74580000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    161 11.763928      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 161: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037ca257f93f6075590000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    165 11.809926      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 165: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037db40573bf61765a8d00000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    169 11.854925      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 169: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803700100000062775b8e00000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    173 11.899922      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 173: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047834dcac39785c715500000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    177 11.944927      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 177: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047934dc2c3a795d725600000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    181 12.012937      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 181: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047a34dcac397a5e735700000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    185 12.066919      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 185: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047b0000803f7b5f745800000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    189 12.112919      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 189: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047ca257f93f7c60755900000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    193 12.165917      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 193: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047db40573bf7d61765a8d000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    197 12.211921      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 197: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280470010000007e62775b8e000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    201 12.256915      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 201: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803883e6d793f63785c7155000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    205 12.301916      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 205: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803893e6df9bf64795d7256000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    209 12.347914      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 209: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038a3e6d793f657a5e7357000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    213 12.392914      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 213: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038b0000803f667b5f7458000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    217 12.437916      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 217: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038ca257f93f677c607559000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    221 12.482914      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 221: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038db40573bf687d61765a8d0000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    225 12.536911      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 225: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038001000000697e62775b8e0000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    229 12.591911      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 229: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804883e6d793f7f63785c71550000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    233 12.636907      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 233: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804893e6df9bf8064795d72560000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    237 12.681905      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 237: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048a3e6d793f81657a5e73570000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    241 12.726905      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 241: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048b0000803f82667b5f74580000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    245 12.767905      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 245: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048ca257f93f83677c6075590000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    249 12.812906      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 249: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048db40573bf84687d61765a8d00000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    253 12.857904      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 253: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804800100000085697e62775b8e00000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    257 12.902902      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 257: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803983e6d793f6a7f63785c715500000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    261 12.948901      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 261: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803993e6df9bf6b8064795d725600000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    265 12.993900      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 265: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039a3e6d793f6c81657a5e735700000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    269 13.038901      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 269: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039b0000803f6d82667b5f745800000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    273 13.083900      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 273: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039ca257f93f6e83677c60755900000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    277 13.133896      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 277: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039db40573bf6f84687d61765a8d000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    281 13.178897      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 281: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280390010000007085697e62775b8e000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    285 13.228896      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 285: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804983e6d793f866a7f63785c7155000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    289 13.278897      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 289: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804993e6df9bf876b8064795d7256000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    293 13.323894      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 293: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049a3e6d793f886c81657a5e7357000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    297 13.368896      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 297: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049b0000803f896d82667b5f7458000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    301 13.418893      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 301: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049ca257f93f8a6e83677c607559000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    305 13.463893      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 305: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049db40573bf8b6f84687d61765a8d0000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    309 13.508892      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 309: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280490010000008c7085697e62775b8e0000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    313 13.563892      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 313: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807106700000091866a7f63785c71550000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    317 13.608889      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 317: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280720f600000092876b8064795d72560000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    321 13.653889      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 321: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807020000000093886c81657a5e73570000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    325 13.698887      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 325: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807116700000096896d82667b5f74580000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    329 13.743888      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 329: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280721f6000000978a6e83677c6075590000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    333 13.797882      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 333: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628070300000000988b6f84687d61765a8d00000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    337 13.843883      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 337: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0610130113010000968c7085697e62775b8e00000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    341 13.892886      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 341: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280310000000000e91866a7f63785c715500000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    345 13.938879      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 345: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280410000000003892876b8064795d725600000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    349 13.987878      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 349: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280708780000008f00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    353 14.033877      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 353: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280704007f00009096896d82667b5f745800000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    357 14.078878      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 357: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807097800000094978a6e83677c60755900000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    361 14.127877      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 361: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280705007f000095988b6f84687d61765a8d000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    365 14.172874      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 365: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280330000000001c968c7085697e62775b8e000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    369 14.218873      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 369: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628043000000000460e91866a7f63785c7155000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    373 14.263872      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 373: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628030000000000073892876b8064795d7256000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    377 14.308872      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 377: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628040000000000318f000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    391 14.652867      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 391: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280350000000002a8f000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    395 14.697865      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 395: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280450000000005400000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    399 14.751864      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 399: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280340000000002394978a6e83677c607559000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    403 14.797864      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 403: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280440000000004d95988b6f84687d61765a000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    407 14.842863      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 407: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280320000000001500000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    411 14.891861      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 411: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280420000000003f00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    417 15.117858      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 417: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06101301130100004d95988b6f84687d61765a000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    421 15.171857      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 421: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06101301130100001500000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    425 15.217858      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 425: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06101301130100003f00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    429 18.652788      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 429: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183201000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    432 18.667787      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 432: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    437 18.711786      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 437: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06281800000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    441 18.761785      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 441: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280500200000008d00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    445 18.815784      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 445: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280600200000008e00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    449 18.860784      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 449: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036834dcac395500000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    453 18.905782      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 453: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036934dc2c3a5600000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    457 18.950781      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 457: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036a34dcac395700000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    461 19.005781      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 461: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036b0000803f5800000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    465 19.050779      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 465: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036ca257f93f5900000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    469 19.095780      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 469: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628036db40573bf5a8d000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    473 19.140778      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 473: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280360010000005b8e000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    477 19.195777      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 477: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046834dcac397155000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    481 19.240777      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 481: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046934dc2c3a7256000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    485 19.294775      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 485: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046a34dcac397357000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    489 19.339776      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 489: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046b0000803f7458000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    493 19.384774      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 493: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046ca257f93f7559000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    497 19.430772      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 497: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046db40573bf765a8d0000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    501 19.475771      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 501: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628046001000000775b8e0000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    505 19.529771      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 505: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037834dcac395c71550000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    509 19.574773      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 509: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037934dc2c3a5d72560000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    513 19.619768      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 513: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037a34dcac395e73570000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    517 19.678768      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 517: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037b0000803f5f74580000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    521 19.723766      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 521: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037ca257f93f6075590000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    525 19.769767      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 525: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628037db40573bf61765a8d00000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    529 19.814765      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 529: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803700100000062775b8e00000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    533 19.859765      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 533: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047834dcac39785c715500000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    537 19.904771      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 537: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047934dc2c3a795d725600000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    541 19.949763      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 541: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047a34dcac397a5e735700000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    545 19.995761      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 545: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047b0000803f7b5f745800000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    549 20.040762      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 549: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047ca257f93f7c60755900000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    553 20.085761      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 553: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628047db40573bf7d61765a8d000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    557 20.130760      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 557: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280470010000007e62775b8e000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    561 20.184759      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 561: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803883e6d793f63785c7155000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    565 20.230757      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 565: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803893e6df9bf64795d7256000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    569 20.275755      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 569: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038a3e6d793f657a5e7357000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    573 20.320755      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 573: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038b0000803f667b5f7458000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    577 20.365755      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 577: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038ca257f93f677c607559000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    581 20.411754      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 581: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038db40573bf687d61765a8d0000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    585 20.469753      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 585: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628038001000000697e62775b8e0000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    589 20.519753      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 589: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804883e6d793f7f63785c71550000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    593 20.564750      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 593: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804893e6df9bf8064795d72560000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    597 20.609750      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 597: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048a3e6d793f81657a5e73570000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    601 20.655748      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 601: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048b0000803f82667b5f74580000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    605 20.700749      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 605: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048ca257f93f83677c6075590000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    609 20.745747      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 609: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628048db40573bf84687d61765a8d00000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    613 20.790790      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 613: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804800100000085697e62775b8e00000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    617 20.835746      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 617: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803983e6d793f6a7f63785c715500000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    621 20.881744      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 621: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803993e6df9bf6b8064795d725600000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    625 20.925743      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 625: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039a3e6d793f6c81657a5e735700000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    629 20.971743      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 629: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039b0000803f6d82667b5f745800000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    633 21.016742      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 633: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039ca257f93f6e83677c60755900000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    637 21.070743      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 637: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628039db40573bf6f84687d61765a8d000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    641 21.115740      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 641: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280390010000007085697e62775b8e000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    645 21.161738      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 645: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804983e6d793f866a7f63785c7155000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    649 21.206739      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 649: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804993e6df9bf876b8064795d7256000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    653 21.251737      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 653: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049a3e6d793f886c81657a5e7357000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    657 21.296735      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 657: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049b0000803f896d82667b5f7458000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    661 21.342736      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 661: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049ca257f93f8a6e83677c607559000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    665 21.396735      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 665: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628049db40573bf8b6f84687d61765a8d0000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    669 21.441733      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 669: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280490010000008c7085697e62775b8e0000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    673 21.486732      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 673: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807106700000091866a7f63785c71550000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    677 21.531732      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 677: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280720f600000092876b8064795d72560000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    681 21.577736      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 681: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807020000000093886c81657a5e73570000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    685 21.622731      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 685: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062807116700000096896d82667b5f74580000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    689 21.667730      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 689: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280721f6000000978a6e83677c6075590000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    693 21.712729      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 693: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0628070300000000988b6f84687d61765a8d00000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    697 21.757730      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 697: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0610130113010000968c7085697e62775b8e00000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    701 21.803729      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 701: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280340000000002391866a7f63785c715500000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    705 21.848732      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 705: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280440000000004d92876b8064795d725600000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    709 21.893726      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 709: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280310000000000e00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    713 21.938723      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 713: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280410000000003896896d82667b5f745800000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    717 21.984727      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 717: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062803000000000007978a6e83677c60755900000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    721 22.029724      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 721: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 062804000000000031988b6f84687d61765a8d000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    733 22.205719      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 733: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280350000000002a4d92876b8064795d7256000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    737 22.250717      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 737: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280450000000005400ff0000ff00c0ff0000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    741 22.295719      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 741: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280320000000001500ff0000ff00c0ff7155000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    745 22.350717      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 745: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280420000000003f978a6e83677c60755900000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    749 22.498716      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 749: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280708780000008f31988b6f84687d61765a000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    753 22.544714      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 753: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280704007f00009000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    757 22.589726      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 757: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280709780000009400000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    761 22.634710      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 761: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280705007f0000952a4d92876b8064795d72000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    767 22.697708      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 767: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280330000000001c00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    771 22.743708      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 771: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06280430000000004600000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    777 22.951704      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 777: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 0610130113017f0000952a4d92876b8064795d000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    781 22.996705      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 781: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06101301130100001c00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    785 23.050706      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 785: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06101301130100004600000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    789 23.642692      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 789: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183201000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    792 23.656690      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 792: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    797 28.633595      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 797: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06183201130100001c00000000000000000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    800 28.647592      1.3.3                 host                  USB      95     URB_INTERRUPT in
+
+Frame 800: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface usbmon1, id 0
+USB URB
+HID Data: 06140300000000000000000000000000000000000000000000000000000000
