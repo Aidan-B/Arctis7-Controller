@@ -23,10 +23,12 @@ Below is the list of features that I want to complete, and the issues that I sho
 - [x] (HACK) Switch audio output (linux) based on headset status
 - [ ] Switch audio output (linux) based on headset status
 - [ ] Report battery life
+- [ ] Setup unit test framework
 - [x] ~~Compile for windows~~
 
 ### Extending
 
+- [ ] Achieve full test coverage (or try to get close)
 - [ ] Understand all steelseries engine software transfers mean
 - [ ] CLI for configuration settings to mimic steelseries engine
 - [ ] Add tray icon to report device status, change settings, exit program
