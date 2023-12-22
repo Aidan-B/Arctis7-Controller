@@ -1,6 +1,8 @@
 #include "NewHeadset.h"
 
 #include <libusb-1.0/libusb.h>
+#include <poll.h>
+#include <stdio.h>
 #include <iostream>
 
 void print_packet(const Packet *packet) {
@@ -18,16 +20,14 @@ int main() {
     libusb_device* device = nullptr;
 	libusb_device_handle* handle = nullptr;
 	bool detachedKernelDriver = false;
-
     int err = 0;
-	
 
-	// Initialize the library
-	err = libusb_init(&ctx);
 	
 	// TODO: This error handling just exits when anything bad happens. 
 	//		 It should be a little more robust. (Get rid of try-throw-catch)
 	try {
+		// Initialize the library
+		err = libusb_init(&ctx);
 		if (err != LIBUSB_SUCCESS) {
 			throw libusb_error(err);
 		}
@@ -64,9 +64,6 @@ int main() {
 			throw libusb_error(err);
 		}
 
-		libusb_free_device_list(device_list, true);
-		device = nullptr;
-
 		if (libusb_has_capability(LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER) && 
 			libusb_kernel_driver_active(handle, Headset::interface))
 		{    
@@ -88,27 +85,77 @@ int main() {
 			throw libusb_error(err);
 		}
 
-
-		Headset headset(handle);
-
-		Battery request;
-		Packet response{.command=0};
 		
-		headset.read(&request, &response);
-		print_packet(&response);
+		const libusb_pollfd** pollfds = libusb_get_pollfds(ctx);
+		timeval tv;
+		timeval zero_tv{.tv_sec=0, .tv_usec=0};
+		std::vector<pollfd> fds;
+		for (const libusb_pollfd** it = pollfds; *it != nullptr; it++) {
+			fds.emplace_back(pollfd{(*it)->fd, (*it)->events, 0});
+		}
+		libusb_free_pollfds(pollfds);
+		
+		// listen for stdin too!
+		fds.emplace_back(pollfd{fileno(stdin), POLLIN, 0});
+
+		{
+			Headset headset(device, handle);
+			headset.start_interrupt_listener();
+
+			// headset.get_battery();
+			bool should_exit = false;
+			while (!should_exit) {
+				
+
+				libusb_get_next_timeout(ctx, &tv);
+				long int ms = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+
+				int ready_fds = poll(fds.data(), fds.size(), ms);
+				if (ready_fds >= 0) {
+					for (auto fd : fds) {
+						if (fd.fd == fileno(stdin) && fd.revents == POLLIN) {
+							std::string input;
+							getline(std::cin, input);
+
+							if (input == "exit") {
+								should_exit = true;
+							} else if (input == "c") {
+								headset.get_connection();
+							} else if (input == "b") {
+								headset.get_battery();
+							}
 
 
+						} else if (fd.revents != 0) {
+							libusb_handle_events_timeout(ctx, &zero_tv);
+						}
+					}
+				}
+			}
+		}
+
+		// Clean up any transfers that have been cancelled when Headset was destroyed
+		while(poll(fds.data(),fds.size(), 100)) {
+			libusb_handle_events_timeout(ctx, &zero_tv);
+		}
+
+		libusb_free_device_list(device_list, true);
+		device = nullptr;
+
+		libusb_release_interface(handle, Headset::interface);
 		if (detachedKernelDriver) {
 			libusb_attach_kernel_driver(handle, Headset::interface);
 		}
 		libusb_close(handle);
+		libusb_exit(ctx);
 
 	}
 	catch(const libusb_error& e) {
 		std::cerr << "Error: " << libusb_strerror(e) << std::endl;
 	}
-
-	libusb_exit(ctx);
+	catch(const libusb_transfer_status& e) {
+		std::cerr << "Error: " << libusb_error_name(e) << std::endl;
+	}
 
 	return 0;
 }

@@ -1,97 +1,180 @@
 #include "NewHeadset.h"
 
-Headset::Headset(libusb_device_handle* handle) : handle(handle) {}
+#include <stdio.h>
 
-void Headset::read(Packet* request, Packet* response, int timeout) {
+Headset::Headset(libusb_device* device, libusb_device_handle* handle) : 
+    device(device),
+    handle(handle) {}
 
-    int ret;
-    int acutual_length;
-
-    ret = libusb_control_transfer(
-        handle, 
-        (LIBUSB_ENDPOINT_OUT | LIBUSB_REQUEST_TYPE_CLASS | LIBUSB_RECIPIENT_INTERFACE),
-        LIBUSB_REQUEST_SET_CONFIGURATION,
-        0x0206, // Not sure what this means
-        0x0005, // Not sure what this means
-        reinterpret_cast<uint8_t*>(request),
-        31,
-        // sizeof(*request),
-        timeout
-    );
-    if (ret < LIBUSB_SUCCESS) {
-        throw libusb_error(ret);
+Headset::~Headset() {
+    for(auto i : active_transfers) {
+        libusb_cancel_transfer(i);
     }
+}
 
-    ret = libusb_interrupt_transfer(
+void Headset::start_interrupt_listener() {
+    
+    int ret;
+    const int buffer_size = libusb_get_max_packet_size(device, endpoint) * 2;
+    uint8_t* interrupt_buffer = new uint8_t[buffer_size];
+
+    libusb_transfer* transfer = libusb_alloc_transfer(0);
+    if (transfer == nullptr) {
+        throw libusb_error(LIBUSB_ERROR_OTHER);
+    }
+    active_transfers.push_back(transfer);
+
+    libusb_fill_interrupt_transfer(
+        transfer, 
         handle,
         endpoint,
-        reinterpret_cast<uint8_t*>(response),
-        sizeof(*response),
-        &acutual_length,
-        timeout
+        interrupt_buffer,
+        buffer_size,
+        Headset::handle_interrupt,
+        this,
+        0 //unlimited
     );
+
+    ret = libusb_submit_transfer(transfer);
     if (ret != LIBUSB_SUCCESS) {
         throw libusb_error(ret);
     }
 }
 
-void Headset::write(Packet* request, int timeout) {
-    int ret;
+void Headset::handle_interrupt(libusb_transfer* transfer) {
+
+    if (transfer->status == LIBUSB_TRANSFER_COMPLETED && transfer->actual_length > 0) {
+        // In the event of transfer cancellation, the headset object could have
+        // been cleaned up, so don't try to access its memory
+        
+        // TODO: Send the data to a callback so the user can make use of it
+        Headset *headset = static_cast<Headset*>(transfer->user_data);
+        (void) headset;
+
+        for (int i = 0; i < transfer->actual_length; i++) {
+            printf("%02x ", transfer->buffer[i]);
+        }
+        printf("\n");
+
+        // Resumbit transfer to continue listening for interrupts
+        int err = libusb_submit_transfer(transfer);
+        if (err < LIBUSB_SUCCESS) {
+            throw libusb_error(err);
+        }
+
+    } else if (transfer->status == LIBUSB_TRANSFER_CANCELLED) {
+        delete transfer->buffer;
+        libusb_free_transfer(transfer);
+
+    } else {
+        throw libusb_transfer_status(transfer->status);
+    }
+}
+
+void Headset::handle_control(libusb_transfer* transfer) {
     
-    ret = libusb_control_transfer(
-        handle, 
+    if (transfer->status == LIBUSB_TRANSFER_COMPLETED) {
+        // In the event of transfer cancellation, the headset object could have
+        // been cleaned up, so don't try to access its memory
+        Headset *headset = static_cast<Headset*>(transfer->user_data);
+        for (std::vector<libusb_transfer*>::iterator iter = headset->active_transfers.begin(); 
+            iter != headset->active_transfers.end(); ++iter)
+        {
+            if( *iter == transfer )
+            {
+                headset->active_transfers.erase( iter );
+                break;
+            }
+        }
+
+    } else if (transfer->status != LIBUSB_TRANSFER_CANCELLED) {
+        throw libusb_transfer_status(transfer->status);
+    }
+    
+    delete transfer->buffer;
+    libusb_free_transfer(transfer);
+
+}
+
+void Headset::send_control_transfer(Packet* request, int timeout) {
+
+    libusb_transfer* transfer = libusb_alloc_transfer(0);
+    if (transfer == nullptr) {
+        throw libusb_error(LIBUSB_ERROR_OTHER);
+    }
+    active_transfers.push_back(transfer); 
+    
+    uint8_t* buffer = new uint8_t[sizeof(*request)+8]();
+    libusb_fill_control_setup(
+        buffer,
         (LIBUSB_ENDPOINT_OUT | LIBUSB_REQUEST_TYPE_CLASS | LIBUSB_RECIPIENT_INTERFACE),
         LIBUSB_REQUEST_SET_CONFIGURATION,
         0x0206, // Not sure what this means
         0x0005, // Not sure what this means
-        reinterpret_cast<uint8_t*>(request),
-        31,
-        // sizeof(*request),
+        31
+    );
+    libusb_fill_control_transfer(
+        transfer,
+        handle,
+        buffer,
+        Headset::handle_control,
+        this,
         timeout
     );
-    if (ret < LIBUSB_SUCCESS) {
+    std::copy(
+        reinterpret_cast<uint8_t*>(request),
+        reinterpret_cast<uint8_t*>(request)+sizeof(*request),
+        libusb_control_transfer_get_data(transfer)
+    );
+
+    int ret = libusb_submit_transfer(transfer);
+    if (ret != LIBUSB_SUCCESS) {
         throw libusb_error(ret);
     }
 }
 
-void Headset::blink_transmitter_led(bool enable) {
+void Headset::set_blink_transmitter_led(bool enable) {
     BlinkTransmitterLED request(enable);
-    write(&request);
+    send_control_transfer(&request);
 }
 
-void Headset::inactivity_shutoff(uint8_t minutes) {
+void Headset::set_inactivity_shutoff(uint8_t minutes) {
     InactivityShutoff request(minutes);
-    write(&request);
+    send_control_transfer(&request);
 }
 
-void Headset::mic_sidetone(bool enabled, MicSidetone::IntensityValues intensity) {
+void Headset::set_mic_sidetone(bool enabled, MicSidetone::IntensityValues intensity) {
     if (!enabled) {
         intensity = MicSidetone::disabled;
     }
     MicSidetone request(enabled, intensity);
-    write(&request);
+    send_control_transfer(&request);
 }
 
-void Headset::mic_volume(uint8_t volume) {
+void Headset::set_mic_volume(uint8_t volume) {
     if (volume > 100) {
         volume = 100;
     }
     MicVolume request(volume);
-    write(&request);
+    send_control_transfer(&request);
 }
 
-bool Headset::connection() {
+bool Headset::get_connection() {
     Connection request;
-    Connection response;
-    read(&request, &response);
+
+    // TODO: setup a callback function to place the data somewhere
+
+    send_control_transfer(&request);
     
-    return response.is_connected();
+    return false;
 }
 
-uint8_t Headset::battery() {
+uint8_t Headset::get_battery() {
     Battery request;
-    Battery response;
-    read(&request, &response);
 
-    return response.get_charge();
+    // TODO: setup a callback function to place the data somewhere
+
+    send_control_transfer(&request);
+
+    return 0;
 }
