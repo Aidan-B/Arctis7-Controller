@@ -2,8 +2,8 @@
 
 #include <stdio.h>
 
-Headset::Headset(libusb_device* device, libusb_device_handle* handle) : 
-    device(device),
+Headset::Headset(libusb_device_handle* handle) : 
+    device(libusb_get_device(handle)),
     handle(handle) {}
 
 Headset::~Headset() {
@@ -50,6 +50,20 @@ void Headset::handle_interrupt(libusb_transfer* transfer) {
         // TODO: Send the data to a callback so the user can make use of it
         Headset *headset = static_cast<Headset*>(transfer->user_data);
         (void) headset;
+
+        if (transfer->actual_length == sizeof(Packet)) {
+            Packet* packet = reinterpret_cast<Packet*>(transfer->buffer);
+
+            if (packet->command == Packet::battery) {
+                if (headset->battery_callback != nullptr) {
+                    headset->battery_callback(headset->state_of_charge_input, reinterpret_cast<Battery*>(packet)->get_charge());
+                }
+            } else if (packet->command == Packet::connection) {
+                if (headset->connected_callback != nullptr) {
+                    headset->connected_callback(headset->connected_input, reinterpret_cast<Connection*>(packet)->is_connected());
+                }
+            }
+        }
 
         for (int i = 0; i < transfer->actual_length; i++) {
             printf("%02x ", transfer->buffer[i]);
@@ -157,6 +171,15 @@ void Headset::set_mic_volume(uint8_t volume) {
     }
     MicVolume request(volume);
     send_control_transfer(&request);
+}
+
+void Headset::set_connection_callback(void (*callback)(void*, bool), void* data) {
+    connected_callback = callback;
+    connected_input = data;
+}
+void Headset::set_battery_callback(void (*callback)(void*, int), void* data) {
+    battery_callback = callback;
+    state_of_charge_input = data;
 }
 
 bool Headset::get_connection() {

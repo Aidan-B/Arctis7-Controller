@@ -1,6 +1,8 @@
 #include "NewHeadset.h"
 
 #include <libusb-1.0/libusb.h>
+// #include <pulse/something.h>
+
 #include <poll.h>
 #include <stdio.h>
 #include <iostream>
@@ -11,6 +13,13 @@ void print_packet(const Packet *packet) {
         printf("%02x ", buf[i]);
     }
     printf("\n");
+}
+
+void battery(void* data, int soc) {
+	printf("Battery soc: %d\n", soc);
+}
+void connected(void* data, bool connected) {
+	printf("Connected: %s\n", connected ? "true" : "false");
 }
 
 int main() {
@@ -64,6 +73,9 @@ int main() {
 			throw libusb_error(err);
 		}
 
+		libusb_free_device_list(device_list, true);
+		device = nullptr;
+
 		if (libusb_has_capability(LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER) && 
 			libusb_kernel_driver_active(handle, Headset::interface))
 		{    
@@ -99,9 +111,11 @@ int main() {
 		fds.emplace_back(pollfd{fileno(stdin), POLLIN, 0});
 
 		{
-			Headset headset(device, handle);
+			Headset headset(handle);
 			headset.start_interrupt_listener();
-
+			headset.set_battery_callback(battery, nullptr);
+			headset.set_connection_callback(connected, nullptr);
+			
 			// headset.get_battery();
 			bool should_exit = false;
 			while (!should_exit) {
@@ -109,6 +123,8 @@ int main() {
 
 				libusb_get_next_timeout(ctx, &tv);
 				long int ms = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+				// TODO: set the timeout so that we can poll the headset every 
+				// 		 few seconds for its connection status
 
 				int ready_fds = poll(fds.data(), fds.size(), ms);
 				if (ready_fds >= 0) {
@@ -138,9 +154,6 @@ int main() {
 		while(poll(fds.data(),fds.size(), 100)) {
 			libusb_handle_events_timeout(ctx, &zero_tv);
 		}
-
-		libusb_free_device_list(device_list, true);
-		device = nullptr;
 
 		libusb_release_interface(handle, Headset::interface);
 		if (detachedKernelDriver) {

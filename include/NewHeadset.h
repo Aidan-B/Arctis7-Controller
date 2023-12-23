@@ -13,6 +13,11 @@ private:
     libusb_device_handle *handle;
     std::vector<libusb_transfer*> active_transfers;
 
+    void (*connected_callback)(void*, bool) = nullptr;
+    void* connected_input = nullptr;
+    void (*battery_callback)(void*, int) = nullptr;
+    void* state_of_charge_input = nullptr;
+
     /**
      * @brief Callback function for usb interrupts
     */
@@ -34,7 +39,7 @@ public:
     static const unsigned char endpoint = 3 | LIBUSB_ENDPOINT_IN; // Arctis 7 headset HID endpoint
     static const int interface = 5; //USB interface used by Arctis 7
 
-    Headset(libusb_device* device, libusb_device_handle *handle);
+    Headset(libusb_device_handle *handle);
     ~Headset();
 
     /**
@@ -74,6 +79,10 @@ public:
     // TODO: Not yet supported
     void sound_setting() {};
     
+
+    void set_connection_callback(void (*callback)(void*, bool), void* data);
+    void set_battery_callback(void (*callback)(void*, int), void* data);
+
     /**
      * @brief Is the headset connected to the receiver
      * @returns true if connected, false otherwise
