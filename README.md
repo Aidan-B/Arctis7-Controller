@@ -3,9 +3,10 @@
 This project is an attempt to understand the comminication that occurs between the arctis 7 wireless headset and my computer. Armed with this knowledge I want to make the headset report back to the computer when it is on or off, and  automatically switch audio output to my speakers and back.
 
 ~~This should also be cross platform between windows and linux, as I have a dual boot machine and want it to be useful in both operating systems.~~
+
 Cross platform is no longer a priority and development effort is focused on Linux. this will allow for the elimination of busy-waiting threads to handle libusb communication, and Windows users can continue to use the steelseries software provided to them.
 
-This application makes use of libusb-1.0 to handle USB communication.
+This application makes use of libusb-1.0 to handle USB communication. If the permission is denied to access the headset, the following rule can be added to `/etc/udev/rules.d/`: `SUBSYSTEMS=="usb", ATTRS{idVendor}=="1038", ATTRS{idProduct}=="12ad", MODE="0666"`
 
 ## Building
 
