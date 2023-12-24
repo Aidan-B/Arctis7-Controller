@@ -56,19 +56,19 @@ void Headset::handle_interrupt(libusb_transfer* transfer) {
 
             if (packet->command == Packet::battery) {
                 if (headset->battery_callback != nullptr) {
-                    headset->battery_callback(headset->state_of_charge_input, reinterpret_cast<Battery*>(packet)->get_charge());
+                    headset->battery_callback(reinterpret_cast<Battery*>(packet)->get_charge());
                 }
             } else if (packet->command == Packet::connection) {
                 if (headset->connected_callback != nullptr) {
-                    headset->connected_callback(headset->connected_input, reinterpret_cast<Connection*>(packet)->is_connected());
+                    headset->connected_callback(reinterpret_cast<Connection*>(packet)->is_connected());
                 }
             }
         }
 
-        for (int i = 0; i < transfer->actual_length; i++) {
-            printf("%02x ", transfer->buffer[i]);
-        }
-        printf("\n");
+        // for (int i = 0; i < transfer->actual_length; i++) {
+        //     printf("%02x ", transfer->buffer[i]);
+        // }
+        // printf("\n");
 
         // Resumbit transfer to continue listening for interrupts
         int err = libusb_submit_transfer(transfer);
@@ -173,13 +173,12 @@ void Headset::set_mic_volume(uint8_t volume) {
     send_control_transfer(&request);
 }
 
-void Headset::set_connection_callback(void (*callback)(void*, bool), void* data) {
+void Headset::set_connection_callback(std::function<void(bool)> callback) {
     connected_callback = callback;
-    connected_input = data;
 }
-void Headset::set_battery_callback(void (*callback)(void*, int), void* data) {
+
+void Headset::set_battery_callback(std::function<void(int)> callback) {
     battery_callback = callback;
-    state_of_charge_input = data;
 }
 
 bool Headset::get_connection() {

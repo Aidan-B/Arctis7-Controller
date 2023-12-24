@@ -5,7 +5,7 @@
 
 #include <libusb-1.0/libusb.h>
 #include <vector>
-
+#include <functional>
 
 class Headset {
 private:
@@ -13,10 +13,8 @@ private:
     libusb_device_handle *handle;
     std::vector<libusb_transfer*> active_transfers;
 
-    void (*connected_callback)(void*, bool) = nullptr;
-    void* connected_input = nullptr;
-    void (*battery_callback)(void*, int) = nullptr;
-    void* state_of_charge_input = nullptr;
+    std::function<void(bool)> connected_callback = nullptr;
+    std::function<void(int)> battery_callback = nullptr;
 
     /**
      * @brief Callback function for usb interrupts
@@ -79,9 +77,19 @@ public:
     // TODO: Not yet supported
     void sound_setting() {};
     
-
-    void set_connection_callback(void (*callback)(void*, bool), void* data);
-    void set_battery_callback(void (*callback)(void*, int), void* data);
+    /**
+     * @brief Set the callback function used when a connection packet is received
+     * @param callback  The function to be called. 
+     *                  Input parameter bool is true when connected
+    */
+    void set_connection_callback(std::function<void(bool)> callback);
+    
+    /**
+     * @brief Set the callback function used when a battery packet is received
+     * @param callback  The function to be called. 
+     *                  Input parameter int is the battery status
+    */
+    void set_battery_callback(std::function<void(int)> callback);
 
     /**
      * @brief Is the headset connected to the receiver

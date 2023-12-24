@@ -1,4 +1,5 @@
 #include "NewHeadset.h"
+#include "TimevalDurationCast.h"
 
 #include <libusb-1.0/libusb.h>
 // #include <pulse/something.h>
@@ -13,13 +14,6 @@ void print_packet(const Packet *packet) {
         printf("%02x ", buf[i]);
     }
     printf("\n");
-}
-
-void battery(void* data, int soc) {
-	printf("Battery soc: %d\n", soc);
-}
-void connected(void* data, bool connected) {
-	printf("Connected: %s\n", connected ? "true" : "false");
 }
 
 int main() {
@@ -111,23 +105,48 @@ int main() {
 		fds.emplace_back(pollfd{fileno(stdin), POLLIN, 0});
 
 		{
+			bool connected = false;
+			int charge = 0;
+			bool connected_updated = false;
+			bool charge_updated = false;
+
 			Headset headset(handle);
 			headset.start_interrupt_listener();
-			headset.set_battery_callback(battery, nullptr);
-			headset.set_connection_callback(connected, nullptr);
+			headset.set_battery_callback(
+				[&charge, &charge_updated](int soc) { 
+					charge = soc;
+					charge_updated = true;
+				});
+			headset.set_connection_callback(
+				[&connected, &connected_updated](bool con) { 
+					connected = con;
+					connected_updated = true;
+				});
 			
-			// headset.get_battery();
+			std::chrono::time_point start = std::chrono::steady_clock::now();
+			std::chrono::duration poll_period = std::chrono::seconds(5);
+			std::chrono::time_point poll_timeout = start + poll_period;
+			long int timeout_ms = 0;
+
 			bool should_exit = false;
 			while (!should_exit) {
-				
 
-				libusb_get_next_timeout(ctx, &tv);
-				long int ms = tv.tv_sec * 1000 + tv.tv_usec / 1000;
-				// TODO: set the timeout so that we can poll the headset every 
-				// 		 few seconds for its connection status
+				// Calculate the next timeout (from libusb or our periodic polling)
+				libusb_get_next_timeout(ctx, &tv);			
+				std::chrono::time_point now = std::chrono::steady_clock::now();
+				std::chrono::milliseconds libusb_period = std::chrono::duration_cast<std::chrono::milliseconds>(tv);
+				std::chrono::time_point libusb_timeout = libusb_period + now;
+				if (libusb_timeout < poll_timeout) {
+					timeout_ms = std::chrono::duration_cast<std::chrono::milliseconds>(tv).count();
+				} else {
+					timeout_ms = std::chrono::duration_cast<std::chrono::milliseconds>(poll_timeout - now).count();
+				}
+				if (timeout_ms < 0) { timeout_ms = 0; }
 
-				int ready_fds = poll(fds.data(), fds.size(), ms);
-				if (ready_fds >= 0) {
+
+				int ready_fds = poll(fds.data(), fds.size(), timeout_ms);
+
+				if (ready_fds > 0) {
 					for (auto fd : fds) {
 						if (fd.fd == fileno(stdin) && fd.revents == POLLIN) {
 							std::string input;
@@ -141,11 +160,29 @@ int main() {
 								headset.get_battery();
 							}
 
-
 						} else if (fd.revents != 0) {
-							libusb_handle_events_timeout(ctx, &zero_tv);
+							libusb_handle_events_timeout(ctx, &zero_tv);	
 						}
 					}
+				} else if (ready_fds == 0) { // timeout
+					if (now > poll_timeout) {
+						poll_timeout += poll_period;
+						headset.get_battery();
+						headset.get_connection();
+					}
+					if (now > libusb_timeout) {
+						libusb_handle_events_timeout(ctx, &zero_tv);	
+					}
+				}
+
+				// Make use of any new data we may have received.
+				if (charge_updated) {
+					printf("Charge: %d\n", charge);
+					charge_updated = false;
+				}
+				if (connected_updated) {
+					printf("Connected %s\n", connected ? "true" : "false");
+					connected_updated = false;
 				}
 			}
 		}
