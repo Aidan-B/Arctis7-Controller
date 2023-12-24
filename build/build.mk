@@ -21,21 +21,9 @@ else
     HIDE =  
 endif
 
-TARGET ?= LINUX
-ifeq  ($(TARGET),WINDOWS)
-	CXX := x86_64-w64-mingw32-g++
-	INC_DIRS += $(WIN_INC_DIRS)
-	LIB_DIRS += $(WIN_LIB_DIRS)
-	BUILD := $(addsuffix /windows,$(BUILD_DIR))
-
-else 
-	CXX := g++
-	INC_DIRS += $(LINUX_INC_DIRS)
-	LIB_DIRS += $(LINUX_LIB_DIRS)
-	BUILD := $(addsuffix /linux,$(BUILD_DIR))
-
-endif
-
+CXX := g++
+INC_DIRS += $(LINUX_INC_DIRS)
+LIB_DIRS += $(LINUX_LIB_DIRS)
 
 # Find all the C and C++ files we want to compile
 SRCS := $(shell find $(SRC_DIRS) -name *.cpp)
@@ -43,8 +31,8 @@ SRCS := $(shell find $(SRC_DIRS) -name *.cpp)
 INC_FLAGS := $(addprefix -I,$(INC_DIRS))
 LIB_FLAGS := $(addprefix -L,$(LIB_DIRS))
 
-DEBUG_OBJS := $(SRCS:%=$(BUILD)/debug/%.o)
-RELEASE_OBJS := $(SRCS:%=$(BUILD)/release/%.o)
+DEBUG_OBJS := $(SRCS:%=$(BUILD_DIR)/debug/%.o)
+RELEASE_OBJS := $(SRCS:%=$(BUILD_DIR)/release/%.o)
 
 DEBUG_DEPS := $(DEBUG_OBJS:.o=.d)
 RELEASE_DEPS := $(RELEASE_OBJS:.o=.d)
@@ -59,29 +47,29 @@ LDFLAGS += $(LINK_FLAGS) $(LIB_FLAGS) $(VERSION_FLAG)
 all: help
 
 clean:
-	@echo "Cleaning directory: $(BUILD)"
-	$(HIDE)find $(BUILD) -type f -not -name build.mk -delete
+	@echo "Cleaning directory: $(BUILD_DIR)"
+	$(HIDE)find $(BUILD_DIR) -type f -not -name build.mk -delete
 
-debug: $(BUILD)/debug/$(OUTPUT)
+debug: $(BUILD_DIR)/debug/$(OUTPUT)
 	@echo "Building Debug complete"
 
-release: $(BUILD)/release/$(OUTPUT)
+release: $(BUILD_DIR)/release/$(OUTPUT)
 	@echo "Building Release complete"
 
 # Link built objects
-$(BUILD)/debug/$(OUTPUT): $(DEBUG_OBJS)
+$(BUILD_DIR)/debug/$(OUTPUT): $(DEBUG_OBJS)
 	@echo "Linking $(DEBUG_OBJS)"
 	$(HIDE)$(CXX) $(DEBUG_OBJS) -o $@ $(LDFLAGS)
-$(BUILD)/release/$(OUTPUT): $(RELEASE_OBJS)
+$(BUILD_DIR)/release/$(OUTPUT): $(RELEASE_OBJS)
 	@echo "Linking $(RELEASE_OBJS)"
 	$(HIDE)$(CXX) $(RELEASE_OBJS) -o $@ $(LDFLAGS)
 
 # Build C++ source
-$(BUILD)/debug/%.cpp.o: %.cpp
+$(BUILD_DIR)/debug/%.cpp.o: %.cpp
 	@echo "Building $< -> $@"
 	$(HIDE)mkdir -p $(dir $@)
 	$(HIDE)$(CXX) $(CPPFLAGS) $(DEBUG_FLAGS) $(CXXFLAGS) -c $< -o $@
-$(BUILD)/release/%.cpp.o: %.cpp
+$(BUILD_DIR)/release/%.cpp.o: %.cpp
 	@echo "Building $< -> $@"
 	$(HIDE)mkdir -p $(dir $@)
 	$(HIDE)$(CXX) $(CPPFLAGS) $(RELEASE_FLAGS) $(CXXFLAGS) -c $< -o $@
@@ -118,8 +106,6 @@ help:
 	@echo "                        Default value: DEBUG"
 	@echo "        RELEASE_MACROS  #define macros defined for release builds"
 	@echo "                        Default value: NDEBUG"
-	@echo "        TARGET          If set to WINDOWS, will create windows executable
-	@echo "                        Default value: LINUX"
 	@echo "        VERBOSE         Print verbose command execution."
 	@echo "                        Default value: FALSE"
 
