@@ -1,11 +1,32 @@
-OUTPUT = app
+BUILD_DIR := build
+INC_DIRS := include
+LINK_FLAGS := -lusb-1.0
 
-BUILD_DIR = build
-SRC_DIRS = src
-INC_DIRS = include
-LIB_DIRS = lib
+SUCCESS_MESSAGE = @printf "`tput bold``tput setaf 2`BUILD SUCCESS`tput sgr0`\n"
 
-LINK_FLAGS = -lusb-1.0
-VERSION_FLAG = -std=c++20
+VERBOSE ?= FALSE
+RELEASE ?= FALSE
 
-include ./build/build.mk
+export
+cli: OUTPUT := arctis_cli
+cli:
+	@$(MAKE) $(BUILD_DIR)/$(OUTPUT) -f ./build/build.mk \
+		SRCS="src/cli.cpp src/NewHeadset.cpp" \
+		OUTPUT=$(OUTPUT) \
+		VERBOSE=$(VERBOSE) \
+		RELEASE=$(RELEASE)
+	$(SUCCESS_MESSAGE)
+
+daemon: OUTPUT := arctis_daemon
+daemon:
+	@$(MAKE) $(BUILD_DIR)/$(OUTPUT) -f ./build/build.mk \
+		SRCS="src/main.cpp src/NewHeadset.cpp" \
+		OUTPUT=$(OUTPUT) \
+		VERBOSE=$(VERBOSE) \
+		RELEASE=$(RELEASE)
+	$(SUCCESS_MESSAGE)
+
+.PHONY: clean
+clean:
+	@echo "Cleaning directory: $(BUILD_DIR)"
+	@find $(BUILD_DIR) -type f -not -name build.mk -delete

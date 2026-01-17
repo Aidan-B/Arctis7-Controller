@@ -1,2 +1,5 @@
 build/*
-.vscode
+/.vscode
+/.zed
+/compile_commands.json
+/.cache
