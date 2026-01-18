@@ -62,7 +62,7 @@ struct MicSidetone : public Packet {
         high =  0x12
     };
 
-    bool& m_enabled = reinterpret_cast<bool&>(data[0]);
+    int8_t& m_enabled = reinterpret_cast<int8_t&>(data[0]);
     uint16_t& m_intensity = reinterpret_cast<uint16_t&>(data[2]);
 
     MicSidetone(const bool enabled, const IntensityValues intensity) : 
