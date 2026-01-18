@@ -25,8 +25,8 @@ int main() {
 	bool detachedKernelDriver = false;
     int err = 0;
 
-	
-	// TODO: This error handling just exits when anything bad happens. 
+
+	// TODO: This error handling just exits when anything bad happens.
 	//		 It should be a little more robust. (Get rid of try-throw-catch)
 	try {
 		// Initialize the library
@@ -34,9 +34,9 @@ int main() {
 		if (err != LIBUSB_SUCCESS) {
 			throw libusb_error(err);
 		}
-		
+
 		// libusb_set_option(ctx, LIBUSB_OPTION_LOG_LEVEL, LIBUSB_LOG_LEVEL_DEBUG);
-		
+
 		// Get the list of devices, then select the correct one from the list
 		ssize_t size = libusb_get_device_list(ctx, &device_list);
 		if (size < 0) {
@@ -70,14 +70,14 @@ int main() {
 		libusb_free_device_list(device_list, true);
 		device = nullptr;
 
-		if (libusb_has_capability(LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER) && 
+		if (libusb_has_capability(LIBUSB_CAP_SUPPORTS_DETACH_KERNEL_DRIVER) &&
 			libusb_kernel_driver_active(handle, Headset::interface))
-		{    
+		{
 			detachedKernelDriver = true;
 			err = libusb_detach_kernel_driver(handle, Headset::interface);
 			if (err != LIBUSB_SUCCESS) {
 				libusb_close(handle);
-				
+
 				throw libusb_error(err);
 			}
 		}
@@ -91,7 +91,7 @@ int main() {
 			throw libusb_error(err);
 		}
 
-		
+
 		const libusb_pollfd** pollfds = libusb_get_pollfds(ctx);
 		timeval tv;
 		timeval zero_tv{.tv_sec=0, .tv_usec=0};
@@ -100,7 +100,7 @@ int main() {
 			fds.emplace_back(pollfd{(*it)->fd, (*it)->events, 0});
 		}
 		libusb_free_pollfds(pollfds);
-		
+
 		// listen for stdin too!
 		fds.emplace_back(pollfd{fileno(stdin), POLLIN, 0});
 
@@ -113,16 +113,16 @@ int main() {
 			Headset headset(handle);
 			headset.start_interrupt_listener();
 			headset.set_battery_callback(
-				[&charge, &charge_updated](int soc) { 
+				[&charge, &charge_updated](int soc) {
 					charge = soc;
 					charge_updated = true;
 				});
 			headset.set_connection_callback(
-				[&connected, &connected_updated](bool con) { 
+				[&connected, &connected_updated](bool con) {
 					connected = con;
 					connected_updated = true;
 				});
-			
+
 			std::chrono::time_point start = std::chrono::steady_clock::now();
 			std::chrono::duration poll_period = std::chrono::seconds(5);
 			std::chrono::time_point poll_timeout = start + poll_period;
@@ -132,7 +132,7 @@ int main() {
 			while (!should_exit) {
 
 				// Calculate the next timeout (from libusb or our periodic polling)
-				libusb_get_next_timeout(ctx, &tv);			
+				libusb_get_next_timeout(ctx, &tv);
 				std::chrono::time_point now = std::chrono::steady_clock::now();
 				std::chrono::milliseconds libusb_period = std::chrono::duration_cast<std::chrono::milliseconds>(tv);
 				std::chrono::time_point libusb_timeout = libusb_period + now;
@@ -161,7 +161,7 @@ int main() {
 							}
 
 						} else if (fd.revents != 0) {
-							libusb_handle_events_timeout(ctx, &zero_tv);	
+							libusb_handle_events_timeout(ctx, &zero_tv);
 						}
 					}
 				} else if (ready_fds == 0) { // timeout
@@ -171,7 +171,7 @@ int main() {
 						headset.get_connection();
 					}
 					if (now > libusb_timeout) {
-						libusb_handle_events_timeout(ctx, &zero_tv);	
+						libusb_handle_events_timeout(ctx, &zero_tv);
 					}
 				}
 

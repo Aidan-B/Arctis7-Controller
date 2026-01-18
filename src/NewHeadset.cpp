@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-Headset::Headset(libusb_device_handle* handle) : 
+Headset::Headset(libusb_device_handle* handle) :
     device(libusb_get_device(handle)),
     handle(handle) {}
 
@@ -13,7 +13,7 @@ Headset::~Headset() {
 }
 
 void Headset::start_interrupt_listener() {
-    
+
     int ret;
     const int buffer_size = libusb_get_max_packet_size(device, endpoint) * 2;
     uint8_t* interrupt_buffer = new uint8_t[buffer_size];
@@ -25,7 +25,7 @@ void Headset::start_interrupt_listener() {
     active_transfers.push_back(transfer);
 
     libusb_fill_interrupt_transfer(
-        transfer, 
+        transfer,
         handle,
         endpoint,
         interrupt_buffer,
@@ -46,7 +46,7 @@ void Headset::handle_interrupt(libusb_transfer* transfer) {
     if (transfer->status == LIBUSB_TRANSFER_COMPLETED && transfer->actual_length > 0) {
         // In the event of transfer cancellation, the headset object could have
         // been cleaned up, so don't try to access its memory
-        
+
         // TODO: Send the data to a callback so the user can make use of it
         Headset *headset = static_cast<Headset*>(transfer->user_data);
         (void) headset;
@@ -86,12 +86,12 @@ void Headset::handle_interrupt(libusb_transfer* transfer) {
 }
 
 void Headset::handle_control(libusb_transfer* transfer) {
-    
+
     if (transfer->status == LIBUSB_TRANSFER_COMPLETED) {
         // In the event of transfer cancellation, the headset object could have
         // been cleaned up, so don't try to access its memory
         Headset *headset = static_cast<Headset*>(transfer->user_data);
-        for (std::vector<libusb_transfer*>::iterator iter = headset->active_transfers.begin(); 
+        for (std::vector<libusb_transfer*>::iterator iter = headset->active_transfers.begin();
             iter != headset->active_transfers.end(); ++iter)
         {
             if( *iter == transfer )
@@ -104,7 +104,7 @@ void Headset::handle_control(libusb_transfer* transfer) {
     } else if (transfer->status != LIBUSB_TRANSFER_CANCELLED) {
         throw libusb_transfer_status(transfer->status);
     }
-    
+
     delete transfer->buffer;
     libusb_free_transfer(transfer);
 
@@ -116,8 +116,8 @@ void Headset::send_control_transfer(Packet* request, int timeout) {
     if (transfer == nullptr) {
         throw libusb_error(LIBUSB_ERROR_OTHER);
     }
-    active_transfers.push_back(transfer); 
-    
+    active_transfers.push_back(transfer);
+
     uint8_t* buffer = new uint8_t[sizeof(*request)+8]();
     libusb_fill_control_setup(
         buffer,
@@ -187,7 +187,7 @@ bool Headset::get_connection() {
     // TODO: setup a callback function to place the data somewhere
 
     send_control_transfer(&request);
-    
+
     return false;
 }
 

@@ -20,7 +20,7 @@ private:
      * @brief Callback function for usb interrupts
     */
     static void handle_interrupt(libusb_transfer* transfer);
-    
+
     /**
      * @brief Callback function for usb control transfers
     */
@@ -41,7 +41,7 @@ public:
     ~Headset();
 
     /**
-     * @brief This function sets up the interrupt input transfers required to 
+     * @brief This function sets up the interrupt input transfers required to
     *         read data from the device. As such, it must be called before data
     *         is read to/from the device
     */
@@ -67,26 +67,26 @@ public:
      * @param intensity The intensity of the sidetone feedback
     */
     void set_mic_sidetone(bool enabled, MicSidetone::IntensityValues intensity);
-    
+
     /**
      * @brief Configures the volume of the microphone
      * @param volume    The percentage of the max microphone volume
     */
     void set_mic_volume(uint8_t volume);
-    
+
     // TODO: Not yet supported
     void sound_setting() {};
-    
+
     /**
      * @brief Set the callback function used when a connection packet is received
-     * @param callback  The function to be called. 
+     * @param callback  The function to be called.
      *                  Input parameter bool is true when connected
     */
     void set_connection_callback(std::function<void(bool)> callback);
-    
+
     /**
      * @brief Set the callback function used when a battery packet is received
-     * @param callback  The function to be called. 
+     * @param callback  The function to be called.
      *                  Input parameter int is the battery status
     */
     void set_battery_callback(std::function<void(int)> callback);

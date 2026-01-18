@@ -28,11 +28,11 @@ struct BlinkTransmitterLED : public Packet {
 
     uint8_t& m_enabled = data[1];
 
-    BlinkTransmitterLED(const bool enabled) : 
+    BlinkTransmitterLED(const bool enabled) :
         Packet{
             .command=blink_led,
             .data = {0x01}
-        } 
+        }
     {
         if (enabled) {
             m_enabled = 0x02;
@@ -44,17 +44,17 @@ struct InactivityShutoff : public Packet {
 
     uint8_t& m_minutes = data[0];
 
-    InactivityShutoff(const uint8_t minutes) : 
+    InactivityShutoff(const uint8_t minutes) :
         Packet{
             .command=inactive_shutoff,
-        } 
+        }
     {
         m_minutes = minutes;
     };
 };
 
 struct MicSidetone : public Packet {
-    
+
     enum IntensityValues : uint16_t {
         disabled = 0x00,
         low = 0x04,
@@ -65,7 +65,7 @@ struct MicSidetone : public Packet {
     int8_t& m_enabled = reinterpret_cast<int8_t&>(data[0]);
     uint16_t& m_intensity = reinterpret_cast<uint16_t&>(data[2]);
 
-    MicSidetone(const bool enabled, const IntensityValues intensity) : 
+    MicSidetone(const bool enabled, const IntensityValues intensity) :
         Packet{
             .command=mic_sidetone,
         }
@@ -78,21 +78,21 @@ struct MicSidetone : public Packet {
 };
 
 struct MicVolume : public Packet {
-    MicVolume(const uint8_t volume) : 
+    MicVolume(const uint8_t volume) :
         Packet{
             .command=mic_volume,
             .data = {0, volume}
-        } 
+        }
     {
         assert(volume <= 100);
     };
 };
 
 struct SoundSetting : public Packet {
-    SoundSetting() : 
+    SoundSetting() :
         Packet{
             .command=sound_settings,
-        } 
+        }
     {
         // Unsupported for now
         assert(false);
@@ -100,10 +100,10 @@ struct SoundSetting : public Packet {
 };
 
 struct Connection : public Packet {
-    Connection() : 
+    Connection() :
         Packet{
             .command=connection,
-        } 
+        }
     {};
 
     bool is_connected() {
@@ -112,17 +112,17 @@ struct Connection : public Packet {
 };
 
 struct Battery : public Packet {
-    Battery() : 
+    Battery() :
         Packet{
             .command=battery,
-        } 
+        }
     {};
-    
+
     int get_charge() {
         //TODO: I think this might be wrong, and there is other data that is
         //      sometimes in the returned packet. I need to figure out what it
         //      means.
-        return data[0]; 
+        return data[0];
     }
 };
 

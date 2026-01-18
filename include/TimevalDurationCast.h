@@ -44,7 +44,7 @@ struct posix_duration_cast< struct timeval, std::chrono::duration<Rep, Period> >
 
 }
 
-// chrono -> timeval    
+// chrono -> timeval
 template<typename T, typename Rep, typename Period>
 auto duration_cast(std::chrono::duration<Rep, Period> const& d)
 -> std::enable_if_t< std::is_same<T, struct timeval>::value, struct timeval >
