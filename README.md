@@ -10,7 +10,7 @@ This application makes use of libusb-1.0 to handle USB communication. If the per
 
 ## Building
 
-The included makefile (designed for use on linux) should mean that after cloning this repo, building is as simple as running `make release`. Use `make help` for additional assistance.
+The included makefile (designed for use on linux) should mean that after cloning this repo, building is as simple as running `make cli`. Use `make help` for additional assistance.
 
 Note that this you will require the gcc/g++ compiler and [libusb](https://libusb.info/) installed on your system.
 
@@ -23,7 +23,7 @@ Below is the list of features that I want to complete, and the issues that I sho
 - [x] Poll for headset on/off status within headset class
 - [x] (HACK) Switch audio output (linux) based on headset status
 - [ ] Switch audio output (linux) based on headset status
-- [ ] Report battery life
+- [x] Report battery life
 - [ ] Setup unit test framework
 - [x] ~~Compile for windows~~
 
@@ -31,8 +31,7 @@ Below is the list of features that I want to complete, and the issues that I sho
 
 - [ ] Achieve full test coverage (or try to get close)
 - [ ] Understand all steelseries engine software transfers mean
-- [ ] CLI for configuration settings to mimic steelseries engine
+- [x] CLI for configuration settings to mimic steelseries engine
 - [ ] Add tray icon to report device status, change settings, exit program
 - [ ] Static compilation option with makefile
 - [ ] Improve error logging, ie: stack traces, logs, etc.
-
